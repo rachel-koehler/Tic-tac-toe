@@ -35,9 +35,9 @@ def mvt_joueur(board, joueur):
                 board[ligne][colo] = joueur
                 break
             else:
-                print("\033[96mLa place est déjà priiise ou hors limites !\033[00m")
+                print("\033[91mLa place est déjà priiise ou hors limites !\033[00m")
         except ValueError:
-            print("\033[96mOn a dit 'ligne,colonne' pour le format, un peu de mémoire dit-donc :o !\033[00m")
+            print("\033[91mOn a dit 'ligne,colonne' pour le format, un peu de mémoire dit-donc :o !\033[00m")
 
 # Victoires ou pas
 def victoire_oupas(board):
